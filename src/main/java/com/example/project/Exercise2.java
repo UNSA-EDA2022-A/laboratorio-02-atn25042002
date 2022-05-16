@@ -38,12 +38,11 @@ public class Exercise2 {
 
 		int[] n= new int[a.length-1];
 		for(int i= 1; i< a.length; i++){
-			System.out.print(a[i-1] + "  ");
+			//System.out.print(a[i-1] + "  ");
 			n[i-1]= a[i];
 		}
 
 		//System.out.print(a[a.length-1]+ "   Suma: " + suma + "\n");
-
 		if(a[0] % 7 == 0 && a[1]== 1){
 			return esSubconjuntoSumaExt(n,suma);
 		}
