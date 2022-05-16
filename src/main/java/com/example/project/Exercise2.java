@@ -44,8 +44,8 @@ public class Exercise2 {
 
 		System.out.print(a[a.length-1]+ "   Suma: " + suma + "\n");
 
-		if(a[0]%7 == 0 && a[1]!= 1){
-			return esSubconjuntoSumaExt(n,suma-a[0]);
+		if(a[0] % 7 == 0 && a[1]== 1){
+			return esSubconjuntoSumaExt(n,suma);
 		}
 		else{
 			return esSubconjuntoSumaExt(n,suma)||esSubconjuntoSumaExt(n,suma-a[0]);
