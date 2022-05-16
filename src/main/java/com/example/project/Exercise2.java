@@ -42,7 +42,7 @@ public class Exercise2 {
 			n[i-1]= a[i];
 		}
 
-		System.out.print(a[a.length-1]+ "   Suma: " + suma + "\n");
+		//System.out.print(a[a.length-1]+ "   Suma: " + suma + "\n");
 
 		if(a[0] % 7 == 0 && a[1]== 1){
 			return esSubconjuntoSumaExt(n,suma);
