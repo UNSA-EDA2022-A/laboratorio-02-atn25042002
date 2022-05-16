@@ -15,10 +15,12 @@ public class Exercise1 {
 	}
 
 	public boolean esCuadradoPerfecto(int numero) {
-		//System.out.println("Probando " + numero);
-		int unidad= numero % 10;
+		//System.out.println("Probando " + numero);		
 		if (numero< 0) // Si es negativo no puede ser un cuadrado perfecto
 			return false;
+		if(numero <= 1)//
+			return true; // Si es cero o uno entonces si es un cuadrado perfecto
+		int unidad= numero % 10; // Extrae la unidad
 		switch(unidad){ // Reduccion del número por criterios de divisibilidad
 			case 2:
 			case 3:
