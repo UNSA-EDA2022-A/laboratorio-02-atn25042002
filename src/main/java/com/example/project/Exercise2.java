@@ -26,6 +26,20 @@ public class Exercise2 {
 
 	public boolean esSubconjuntoSumaExt(int a[], int suma) {
 
-		return false;
+		if(suma == 0)
+			return true;
+			
+		if(a.length== 1 && a[0]!= suma)
+			return false;
+
+		int[] n= new int[a.length-1];
+		for(int i= 1; i< a.length; i++){
+			n[i-1]= a[i];
+		}
+
+		if(a[0]%7 == 0 && a[1]!= 1)
+			return esSubconjuntoSumaExt(n,suma-a[0]);
+		else
+			return esSubconjuntoSumaExt(n,suma)||esSubconjuntoSumaExt(n,suma-a[0]);
 	}
 }
